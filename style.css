@@ -1,0 +1,144 @@
+*{
+  margin :0;
+  padding: 0;
+}
+/*CSS Variables*/
+:root{
+  --navbar-height:59px;
+}
+#navbar
+{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#navbar::before
+{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width:100%;
+  top: 0px;
+  left: 0px;
+  z-index :-1;/* content goes on top of background*/
+  opacity: 0.4;
+
+}
+/* Nav BarLogo and image*/
+#logo
+{
+  margin:5px 4px;
+
+}
+#logo img
+{
+  height: 100px;
+  margin:5px 4px;
+}
+
+#navbar ul
+{
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+}
+
+#navbar ul li
+{
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a
+{
+  color:white;
+  display : block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none; /*remove the line under twords*/ 
+}
+#navbar ul li a:hover
+{
+  color:black;
+  background-color:white;
+}
+/*Home Section*/
+#home
+{
+  display:flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height : 400px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before
+{
+  content: "";
+  background: url('../images/bg1.jpg') no-repeat center center/cover;
+  position:absolute;
+  height: 150%;
+  width:100%;
+  z-index :-1;/* content goes on top of background*/
+  opacity: 0.89;
+}
+#home h1
+{
+  background-color: black;
+  padding: 6px 20px;
+  opacity: 0.7;
+  color: white;
+  text-align:left;
+  font-family: 'Raleway', sans-serif;
+}
+#home h2
+{
+  color: white;
+  text-align:left;
+  font-family: 'Raleway', sans-serif;
+} 
+/* Services */
+#services
+{
+  margin:34px;
+  display: flex;
+}
+#services .box
+{
+  border: 2px;
+
+}
+#services .box img
+{
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+/*Utility classes*/
+.h-primary
+{
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.h-secondary
+{
+  font-size: 3.8 rem;
+  padding: 12px;
+}
+.btn
+{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color:maroon;
+  opacity: 0.89;
+  color: white;
+  margin: 17px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  cursor:pointer;
+  text-decoration: none;
+}
+.center
+{
+  text-align:center;
+}
